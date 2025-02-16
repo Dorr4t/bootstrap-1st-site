@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Victor page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
     <header>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-dark bg-dark">
             <div class="container align-items-center">
                 <a class="navbar-brand fw-bold me-1"><h1 class="mb-0">Viktor</h1></a>
                 <p class="navbar-text text-end me-3 mb-0 ms-auto">ПользовательQWERTY</p>
@@ -27,87 +27,239 @@
         </nav>
     </header>
     <body>
-        <div>
-            
-        </div>
-        <div id="carouselExampleCaptions"  class="carousel slide" data-bs-ride="carousel" >
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/p-1.jpg" class="d-block w-100" alt="Slide 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Превращаю идеи в код и дизайн в реальность</h5>
-                        <p>Я увлекаюсь разработкой удобных и стильных сайтов. Люблю превращать сложные задачи в элегантные решения.</p>
+
+                <div id="carouselExampleCaptions"  class="carousel slide" data-bs-ride="carousel" >
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/p-2.png" class="d-block w-100" alt="Slide 2">
-                    <div class="carousel-caption d-none d-md-block bg-dark text-white p-3 d-inline-block rounded opacity-75">
-                        <h5>Я — Виктор</h5>
-                        <p>Веб-разработчик, который создаёт адаптивные, быстрые и удобные сайты. Работая с HTML, CSS, JavaScript, Bootstrap и другими технологиями, я стремлюсь делать веб-пространство лучше.</p>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/p-4.jpg" class="d-block w-100" alt="Slide 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Превращаю идеи в код и дизайн в реальность</h5>
+                                <p>Я увлекаюсь разработкой удобных и стильных сайтов. Люблю превращать сложные задачи в элегантные решения.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/p-5.jpg" class="d-block w-100" alt="Slide 2">
+                            <div class="carousel-caption d-none d-md-block bg-dark text-white p-3 d-inline-block rounded opacity-75">
+                                <h5>Я — Виктор</h5>
+                                <p>Веб-разработчик, который создаёт адаптивные, быстрые и удобные сайты. Работая с HTML, CSS, JavaScript, Bootstrap и другими технологиями, я стремлюсь делать веб-пространство лучше.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/p-6.gif" class="d-block w-100" alt="Slide 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 >Почему я?</h5>
+                                <p>
+                                    ✅ Владею Frontend & Backend ✅ Умею адаптировать сайты под любой экран ✅ Постоянно учусь и совершенствуюсь ✅ Работаю на результат, а не просто "делаю код"
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/p-3.gif" class="d-block w-100" alt="Slide 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 >Почему я?</h5>
-                        <p>
-                            ✅ Владею Frontend & Backend ✅ Умею адаптировать сайты под любой экран ✅ Постоянно учусь и совершенствуюсь ✅ Работаю на результат, а не просто "делаю код"
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+           
+
+        
         
     
       <div class="container">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 mb-5 bg-secondary">
-                    <div class="custom-box  rounded-bottom">
+                <div class="col-md-12 mb-5 mt-5 rounded-bottom">
+                    <div class="custom-box">
                         <div class="row p-3">
-                            <div class="col-md-8">
-                                <h3>🛠 Мои инструменты:</h3>
-                                <p>🖥 Frontend: HTML, CSS, JavaScript, Bootstrap, Flexbox, Grid</p>
-                                <p>🖥 Backend: Node.js / PHP / Python</p>
-                                <p>🛠 Дополнительно: Git, Figma, адаптивная верстка</p>
-                            </div>
-                            <div class="col-md-4 p-1">
-                                <img class="img-fluid rounded w-100 float-end" src="images/cat.jpg">
+                            <div class="text-white text-center">
+                                <h3 class="gradient-text mb-5">🛠 Мои инструменты:</h3>
+                                <div class="typing-container">
+                                    <p class="typing-text h2">🖥 Frontend: HTML, CSS, JavaScript, Bootstrap, Flexbox, Grid</p>
+                                </div>
+                                <div class="typing-container">
+                                    <p class="typing-text h3">🖥 Backend: Node.js / PHP / Python</p>
+                                </div>
+                                <div class="typing-container">
+                                    <p class="typing-text h4">🛠 Дополнительно: Git, Figma, адаптивная верстка</p>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-                <div class="col-md-12 mb-5">
-                    <div class="custom-box bg-success text-white">
-                        <a href="portfolio-1.html">Ссылка на первыю работу</a>
-                    </div>
-                </div>
-                <div class="col-md-12 mb-3">
-                    <div class="custom-box bg-danger text-white">Контейнер 3</div>
+                <div class="col-md-12 mb-5 text-white rounded">
+                    <div class="custom-box">
+                        <div class="row">
+                            <div class="col-lg-4  mb-5">
+                                <div class="card bg-dark bg-gradient text-white">
+                                    <img src="images/girl-1.png" class="card-img-top border" alt="Cat">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Работа 1</h5>
+                                    <p class="card-text">Самая первая наработка. <strong class="gradient-text">Библиотека</strong></p>
+                                    <a href="portfolio-1.html" target="_blank" class="btn btn-primary">Кнопочка</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <figure>
+                                    <blockquote class="blockquote">
+                                        <p style="text-align: justify;">Тьма плавно растекается по горизонту, смешиваясь с проблесками неоновых огней. Город не спит, он дышит в такт электрическим импульсам, заполняющим его улицы. В переулках шепчутся истории, за кодом скрываются судьбы, а реальность трескается под тяжестью цифровых грёз. <strong class="text-danger">Здесь каждый выбор — это точка невозврата.</strong> Ты можешь спрятаться в уюте иллюзий или шагнуть навстречу неизведанному. <small class="text-body-secondary bg-light">Вопрос лишь в том, осмелишься ли ты заглянуть за грань привычного мира?</small></p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">Victor</figcaption>
+                                  </figure>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <img src="images/girl.png" class="h-100 w-100 border rounded mb-3" style="object-fit: cover;">
+                                <p class="text-center">Milk outside a bag of milk outside a bag of milk</p>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
-        </div>
+        </div>  
         
       </div>
+      <h1 class="text-center text-white">Статистика <a href="https://github.com/Dorr4t" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">GitHub</a></h1>
+        <div class="carousel" style="overflow: hidden; width: 100%;">
+            <div class="image-container ">
+                <img class="image-container-image" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dorr4t&theme=dark"  alt="GitHub Stats">
+                <img class="image-container-image" src="https://github-readme-stats.vercel.app/api?username=dorr4t&show_icons=true&theme=dark" alt="GitHub Stats">
+                <img class="image-container-image" src="https://github-readme-activity-graph.vercel.app/graph?username=dorr4t&theme=react-dark" alt="GitHub Activity">
+
+                <img class="image-container-image" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dorr4t&theme=dark" alt="GitHub Stats">
+                <img class="image-container-image" src="https://github-readme-stats.vercel.app/api?username=dorr4t&show_icons=true&theme=dark" style="object-fit: contain;" alt="GitHub Stats">
+                <img class="image-container-image" src="https://github-readme-activity-graph.vercel.app/graph?username=dorr4t&theme=react-dark" alt="GitHub Activity">
+            </div>
+        </div>
+
+        <p class="text-center text-white fs-1 mt-5 mb-5 gradient-text">ANIME</p>
+        <div>
+            <img src="images/anime.png" style="z-index: 3; position: absolute; height: 150%;">
+            <div class="position-absolute" style="z-index: 6; right: 60px;">
+
+                <div class="card bg-dark bg-gradient text-white mb-4">
+                    <img src="images/girl-1.png" class="card-img-top border" alt="Cat" style="max-width: 500px; object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Работа 1</h5>
+                        <p class="card-text">Самая первая наработка. <strong class="gradient-text">Библиотека</strong></p>
+                        <a href="portfolio-1.html" target="_blank" class="btn btn-primary">Кнопочка</a>
+                    </div>
+                </div>  
+
+                <div class="card bg-dark bg-gradient text-white mb-4"  style="max-width: 500px; object-fit:cover;">
+                    <img src="images/p-2.png" class="card-img-top border" alt="Cat">
+                    <div class="card-body">
+                        <h5 class="card-title">Работа 2</h5>
+                        <p class="card-text">Вторая работа. <strong class="gradient-text">Анимации</strong></p>
+                        <a href="portfolio-1.html" target="_blank" class="btn btn-primary disabled">Кнопочка</a>
+                    </div>
+                </div>
+            </div>
 
 
 
+
+            <div class="position-relative mb-5">
+                <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                    <p class="text-white-50 m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                        ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                    </p>
+                </div>
+            </div>
+            <div class="position-relative mb-5">
+                <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                    <p class="text-white m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                        ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                    </p>
+                </div>
+            </div>
+            <div class="position-relative mb-5">
+                <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                    <p class="text-white-50 m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                        ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                    </p>
+                </div>
+            </div>
+            <div class="position-relative mb-5">
+                <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                    <p class="text-white-100 m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                        ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                    </p>
+                </div>
+            </div>
+            <div class="position-relative mb-5">
+                <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                    <p class="text-white-50 m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                        ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                    </p>
+                </div>
+            </div>
+            <div class="position-relative mb-5">
+                <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                    <p class="text-white m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                        ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                    </p>
+                </div>
+            </div>
+
+            <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden mt-5" style="z-index: 4; position:relative;">
+                
+                <div class="position-relative mb-5">
+                    <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                        <p class="text-white-50 m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                            ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                        </p>
+                    </div>
+                </div>
+                <div class="position-relative mb-5">
+                    <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                        <p class="text-white-100 m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                            ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                        </p>
+                    </div>
+                </div>
+                <div class="position-relative mb-5">
+                    <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                        <p class="text-white-50 m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                            ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                        </p>
+                    </div>
+                </div>
+                <div class="position-relative mb-5">
+                    <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                        <p class="text-white m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                            ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                        </p>
+                    </div>
+                </div>
+                <div class="position-relative mb-5">
+                    <div class="anime-text marquee top-0 start-0 w-100 h-100 overflow-hidden">
+                        <p class="text-white-50 m-0" style="font-size: 50px; font-family:'Courier New', Courier, monospace; line-height: 1.2;">
+                            ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME ANIME
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+
+    </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="typping-text.js"></script>
+
   </body>
 </html>
