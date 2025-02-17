@@ -1,46 +1,55 @@
-
-html, body {
+html,
+body {
     font-family: 'Roboto', sans-serif;
     overflow: auto;
     background: linear-gradient(180deg, #09090c, #282a36, #232d38, #4b4f63, #502524);
     animation: gradient 25s ease infinite;
     background-size: 300% 300%;
     background-attachment: fixed;
- 
+
 }
 
 
 
 
 
-  .wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+}
 
-  .gradient-text{
+.gradient-text {
     background-image: linear-gradient(45deg, #ff0000, #b2cabb);
     background-size: 300% 300%;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     animation: gradientAnimation 10s infinite linear;
-  }
+}
 
-  @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
-  
-  .content {
+
+.content {
     flex: 1;
-  }
-  
-h2 { 
-    font-size: 1.5rem; 
 }
+
+h2 {
+    font-size: 1.5rem;
+}
+
 .btn-teal {
     background-color: #17a2b8;
     color: white;
@@ -61,53 +70,64 @@ h2 {
     margin: 2px;
 }
 
-.course-image { 
+.course-image {
     width: 100%;
     height: 100px;
 }
 
 .carousel-item {
-    height: 500px; /* Фиксированная высота для всех слайдов */
+    height: 500px;
+    /* Фиксированная высота для всех слайдов */
 }
 
 .carousel-item img {
-    height: 100%; /* Растягиваем картинку по высоте */
-    object-fit: cover; /* Заполняем, сохраняя пропорции */
+    height: 100%;
+    /* Растягиваем картинку по высоте */
+    object-fit: cover;
+    /* Заполняем, сохраняя пропорции */
 }
 
 
 footer {
     background-color: #555353;
     padding: 25px;
-    text-align: center; 
+    text-align: center;
 }
 
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
     }
+
     50% {
         background-position: 100% 100%;
     }
+
     100% {
         background-position: 0% 0%;
     }
 }
-      
+
 .typing-container {
-    overflow: hidden; /* Скрываем текст, который еще не напечатан */
-    white-space: nowrap; /* Запрещаем перенос строк */
-    border-right: 2px solid black; /* Эффект курсора */
-    margin: 20px auto; 
-    width: 0; /* Начальная ширина контейнера */
+    overflow: hidden;
+    /* Скрываем текст, который еще не напечатан */
+    white-space: nowrap;
+    /* Запрещаем перенос строк */
+    border-right: 2px solid black;
+    /* Эффект курсора */
+    margin: 20px auto;
+    width: 0;
+    /* Начальная ширина контейнера */
     max-width: max-content;
     animation: typing 3s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
-    padding-right: 8px; /* Отступ для каретки */
+    padding-right: 8px;
+    /* Отступ для каретки */
 }
 
 .typing-text {
     margin-bottom: 0;
-    opacity: 0; /* Начальное состояние текста */
+    opacity: 0;
+    /* Начальное состояние текста */
 }
 
 /* Анимация набора текста */
@@ -115,6 +135,7 @@ footer {
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
@@ -122,15 +143,18 @@ footer {
 
 /* Анимация мигающего курсора */
 @keyframes blink-caret {
-    from, to {
+
+    from,
+    to {
         border-color: transparent;
     }
+
     50% {
         border-color: black;
     }
 }
 
-.image-container{
+.image-container {
     display: grid;
     grid-auto-flow: column;
     width: max-content;
@@ -138,7 +162,7 @@ footer {
     animation: scrollImages 12s linear infinite;
 }
 
-.image-container-image{
+.image-container-image {
     height: 250px;
     object-fit: fill;
 }
@@ -146,37 +170,57 @@ footer {
 @keyframes scrollImages {
     0% {
         transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%); 
-      }
-  }
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 
 /* Стили для текста "ANIME" */
 .anime-text {
-    z-index: 0; /* Текст будет под карточкой */
-    pointer-events: none; /* Чтобы текст не перехватывал клики */
+    z-index: 0;
+    /* Текст будет под карточкой */
+    pointer-events: none;
+    /* Чтобы текст не перехватывал клики */
 }
 
 /* Убедимся, что текст не переносится и повторяется */
 
-.marquee{text-align:left;width:100%;overflow:hidden;white-space: nowrap;}
-.marquee p { 
-    display:inline-block;
-    width:100%;
-    text-indent:0;
+.marquee {
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee p {
+    display: inline-block;
+    width: 100%;
+    text-indent: 0;
     animation: marquee 20s linear infinite
 }
-.marquee p:hover{
+
+.marquee p:hover {
     animation-play-state: paused
 }
+
 @keyframes marquee {
-0%  { transform:translateX(0); }
-100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
+
 @media only screen and (max-width: 440px) {
-.marquee span{animation:none;padding-left:0}
+    .marquee span {
+        animation: none;
+        padding-left: 0
+    }
 }
 
 /* Убедимся, что карточка находится поверх текста */

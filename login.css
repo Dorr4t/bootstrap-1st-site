@@ -1,0 +1,23 @@
+.modal-dark .modal-content {
+    background-color: #333;
+    color: #fff;
+}
+
+.modal-dark .modal-header {
+    border-bottom: 1px solid #444;
+}
+
+.modal-dark .modal-footer {
+    border-top: 1px solid #444;
+}
+
+.modal-dark .form-control {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.modal-dark .btn-close {
+    filter: invert(1); /* Делает иконку закрытия белой */
+}
+
